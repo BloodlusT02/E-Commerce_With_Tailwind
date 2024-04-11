@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Remix Icon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="p-3 flex justify-between items-center bg-white">
+    <a href="#" class="flex gap-3 items-center" id="brand">
+      <img class="object-cover max-w-12 max-h-12 rounded-md" src="./public/images/Logo.png" alt="Logo">
+      <span class="font-semibold text-lg">Style Fusion</span>
+    </a>
+
+    <div id="nav-menu" class="hidden lg:flex gap-10">
+      <a class="font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit" href="index.html">Home</a>
+      <a class="font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit"  href="products.html">Products</a>
+      <a class="font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit" href="contact.html">Contact Us</a>
+      <a class="font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit" href="about.html">About Us</a>
+    </div>
+
+    <div class="hidden lg:flex">
+      <a href="#" class="bg-black text-white px-10 py-3 font-semibold hover:text-green-400">About Us <i class="ri-arrow-right-up-line"></i></a>
+      <a href="cart.html" id="cartValue" class="bg-[#025e6c] text-white px-6 py-3 font-semibold hover:bg-[#0e9594]"><i class="ri-shopping-cart-line"></i> <span>01</span> </a>
+    </div>
+
+    <button id="menuButton" class="p-2 md:hidden">
+      <i class="ri-menu-line text-gray-600 font-semibold"></i>
+    </button>
+
+    <div id="nav-dialog" class="hidden fixed z-10 md:hidden bg-white inset-0 p-3">
+      <div id="nav-bar" class="flex justify-between">
+        <a href="#" class="flex gap-3 items-center" id="brand">
+          <img class="object-cover max-w-12 max-h-12 rounded-md" src="./public/images/Logo.png" alt="Logo">
+          <span class="font-semibold text-lg">Style Fusion</span>
+        </a>
+        <button id="closeMenuButton" class="p-2 md:hidden">
+          <i class="ri-close-large-line text-gray-600 font-semibold"></i>
+        </button>
+      </div>
+      <div class="mt-6">
+        <a href="index.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">Home</a>
+        <a href="products.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">Products</a>
+        <a href="contact.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">Contact Us</a>
+        <a href="about.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">About Us</a>
+      </div>
+      <div class="h-[1px] bg-gray-300"></div>
+      <div class="flex mt-6">
+        <a href="#" class="bg-black text-white px-10 py-3 font-semibold hover:text-green-400">About Us <i class="ri-arrow-right-up-line"></i></a>
+        <a href="cart.html" id="cartValueMobile" class="bg-[#025e6c] text-white px-6 py-3 font-semibold hover:bg-[#0e9594]"><i class="ri-shopping-cart-line"></i> <span>01</span> </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- main -->
+ <main>
+  <div class="bg-gradient-to-br from-purple-100 via-orange-50 to-transparent p-4 flex flex-col gap-4">
+
+    <h1 class="text-4xl font-bold my-3 mx-6">About Us</h1>
+
+    <div id="accordian" class="bg-white p-3 rounded shadow-2xl">
+      <div id="question" class="flex justify-between items-center px-3 cursor-pointer">
+        <h2 class="text-xl font-semibold pb-2 md:text-2xl">Our Mission</h2>
+        <i class="icon ri-arrow-down-s-line text-xl font-semibold transition-transform md:text-2xl"></i>
+      </div>
+      <div id="answer" class="answer max-h-0 overflow-hidden transition-max-height duration-500">
+        <p class="px-3 md:text-lg">
+          Our mission at Style Fusion is to provide a seamless online shopping experience that empowers customers to discover, explore, and purchase products they love, all while prioritizing convenience, affordability, and trust. We strive to curate a diverse selection of high-quality goods, ranging from everyday essentials to unique finds, ensuring that every shopper finds something that resonates with their lifestyle and preferences. With a commitment to customer satisfaction and innovation, we aim to redefine the e-commerce landscape by fostering meaningful connections between buyers and sellers, ultimately making shopping more enjoyable and accessible for everyone.
+        </p>
+      </div>
+    </div>
+
+    <div id="accordian" class="bg-white p-3 rounded shadow-2xl">
+      <div id="question" class="flex justify-between items-center px-3 cursor-pointer">
+        <h2 class="text-xl font-semibold pb-2 md:text-2xl">Product Categories</h2>
+        <i class="icon ri-arrow-down-s-line text-xl font-semibold transition-transform md:text-2xl"></i>
+      </div>
+      <div id="answer" class="answer max-h-0 overflow-hidden transition-max-height duration-500">
+        <p class="px-3 md:text-lg">
+          "Product Categories" is where we neatly organize our diverse range of products into distinct groups. From fashion to electronics, home decor to beauty products, each category helps you quickly find what you're looking for or explore related items. It's your shortcut to discovering new products and making informed decisions with ease.
+        </p>
+      </div>
+    </div>
+
+    <div id="accordian" class="bg-white p-3 rounded shadow-2xl">
+      <div id="question" class="flex justify-between items-center px-3 cursor-pointer">
+        <h2 class="text-xl font-semibold pb-2 md:text-2xl">Special Offers</h2>
+        <i class="icon ri-arrow-down-s-line text-xl font-semibold transition-transform md:text-2xl"></i>
+      </div>
+      <div id="answer" class="answer max-h-0 overflow-hidden transition-max-height duration-500">
+        <p class="px-3 md:text-lg">
+          "Special Offers" is where we highlight exciting promotions, discounts, and sales, exclusively curated for our valued customers. Dive into this section to uncover limited-time deals on your favorite products, making shopping even more rewarding. Whether it's a seasonal sale, a bundle offer, or a flash deal, our Special Offers section is your go-to destination for savings and surprises. Don't miss out on these fantastic opportunities to get more value from your shopping experience.
+        </p>
+      </div>
+    </div>
+
+    <div id="accordian" class="bg-white p-3 rounded shadow-2xl">
+      <div id="question" class="flex justify-between items-center px-3 cursor-pointer">
+        <h2 class="text-xl font-semibold pb-2 md:text-2xl">Customer Reviews/Testimonials</h2>
+        <i class="icon ri-arrow-down-s-line text-xl font-semibold transition-transform md:text-2xl"></i>
+      </div>
+      <div id="answer" class="answer max-h-0 overflow-hidden transition-max-height duration-500">
+        <p class="px-3 md:text-lg">   
+          "Customer Reviews/Testimonials" is where you'll find authentic feedback from our satisfied shoppers. Dive into this section to discover firsthand experiences and insights about our products and services. These testimonials offer valuable perspectives from real customers, helping you make confident purchasing decisions. Explore the reviews to gain trust and assurance in the quality and reliability of our offerings, and join the ranks of our happy customers today.
+        </p>
+      </div>
+    </div>
+
+    <div id="accordian" class="bg-white p-3 rounded shadow-2xl">
+      <div id="question" class="flex justify-between items-center px-3 cursor-pointer">
+        <h2 class="text-xl font-semibold pb-2 md:text-2xl">Privacy Policy</h2>
+        <i class="icon ri-arrow-down-s-line text-xl font-semibold transition-transform md:text-2xl"></i>
+      </div>
+      <div id="answer" class="answer max-h-0 overflow-hidden transition-max-height duration-500">
+        <p class="px-3 md:text-lg">              
+          "Privacy Policy" outlines how we collect, use, and protect your personal information on our website. It's our commitment to transparency and respect for your privacy. In this section, you'll find details on the types of data we collect, how we use it, and your rights regarding your information. We adhere to strict standards to ensure your data is handled securely and responsibly. Your privacy is paramount, and our Privacy Policy serves as our promise to safeguard your personal information.
+        </p>
+      </div>
+    </div>
+
+    <div id="accordian" class="bg-white p-3 rounded shadow-2xl">
+      <div id="question" class="flex justify-between items-center px-3 cursor-pointer">
+        <h2 class="text-xl font-semibold pb-2 md:text-2xl">Terms of Service</h2>
+        <i class="icon ri-arrow-down-s-line text-xl font-semibold transition-transform md:text-2xl"></i>
+      </div>
+      <div id="answer" class="answer max-h-0 overflow-hidden transition-max-height duration-500">
+        <p class="px-3 md:text-lg">                  
+          "Terms of Service" is a legal agreement that outlines the rules and guidelines governing the use of our website and services. It covers various aspects such as user responsibilities, acceptable use of the platform, intellectual property rights, disclaimers, and limitations of liability. By accessing or using our website, you agree to abide by these terms and conditions. This document serves to protect both our users and our business, ensuring a fair and transparent relationship. Please review our Terms of Service carefully before using our website or services.
+        </p>
+      </div>
+    </div>
+
+    <div id="accordian" class="bg-white p-3 rounded shadow-2xl">
+      <div id="question" class="flex justify-between items-center px-3 cursor-pointer">
+        <h2 class="text-xl font-semibold pb-2 md:text-2xl">Social Media</h2>
+        <i class="icon ri-arrow-down-s-line text-xl font-semibold transition-transform md:text-2xl"></i>
+      </div>
+      <div id="answer" class="answer max-h-0 overflow-hidden transition-max-height duration-500">
+        <p class="px-3 md:text-lg">                            
+            "Social Media" refers to the seamless incorporation of various social media platforms into our website. Through this integration, visitors can easily access and interact with our social media profiles directly from our website. Whether it's following us on Facebook, Twitter, Instagram, or other platforms, users can stay updated on the latest news, promotions, and content. By bridging our website and social media channels, we create a cohesive online presence and foster engagement with our audience across multiple platforms.
+        </p>
+        <p class="px-3 md:text-lg">Social Media Name: <strong class="text-[cadetblue]">StyleFusioniverse</strong></p>
+        <p class="px-3 md:text-lg">Social Media Name: <strong class="text-[cadetblue]">www.stylefusioniverse.com</strong></p>
+        <p class="px-3 md:text-lg">Address: <strong class="text-[cadetblue]">123 Fashion Avenue, Trendville, Stylishland</strong></p>
+      </div>
+    </div>
+
+  </div>
+ </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="bg-slate-700 p-3 md:flex xl:flex xl:justify-center">
+      <div id="part-1" class="h-40 w-72 md:w-96 flex flex-col justify-center">
+        <img class="max-w-14 max-h-14 rounded ml-10 hover:scale-110 transition" src="./public/images/Logo.png" alt="Logo_img">
+        <h2 class="ml-10 mt-2 cursor-pointer text-white text-lg font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Style Fusion</h2>
+      </div>
+      <div id="part-2" class="h-40 w-72 md:w-96 flex flex-col justify-center text-white">
+        <h2 class="ml-10 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Vast Selection</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Easy Navigation</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Fast Shipping</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Customer Support</h2>
+      </div>
+      <div id="part-3" class="h-40 w-72 md:w-96 flex flex-col justify-center text-white">
+        <h2 class="ml-10 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Product Guides</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Resource name</h2>
+        <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Brand Stories</h2>
+        <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Our Story</h2>
+      </div>
+      <div id="part-4" class="h-40 w-72 md:w-96 text-white flex flex-col justify-center">
+        <h2 class="ml-10 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Company History</h2>
+        <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Privacy</h2>
+          <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Terms</h2>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="about.js"></script>
+</body>
+</html>

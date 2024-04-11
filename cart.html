@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Remix Icon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-50">
+  <!-- Navbar -->
+  <nav class="p-3 flex justify-between items-center bg-white">
+    <a href="#" class="flex gap-3 items-center" id="brand">
+      <img class="object-cover max-w-12 max-h-12 rounded-md" src="./public/images/Logo.png" alt="Logo">
+      <span class="font-semibold text-lg">Style Fusion</span>
+    </a>
+
+    <div id="nav-menu" class="hidden lg:flex gap-10">
+      <a class="nav-link font-semibold hover:text-[#4361ee]  hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit" href="index.html">Home</a>
+      <a class="nav-link font-semibold hover:text-[#4361ee]  hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit"  href="products.html">Products</a>
+      <a class="nav-link font-semibold hover:text-[#4361ee]  hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit" href="contact.html">Contact Us</a>
+      <a class="nav-link font-semibold hover:text-[#4361ee]  hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit" href="about.html">About Us</a>
+    </div>
+
+    <div class="hidden lg:flex">
+      <a href="#" class="bg-black text-white px-10 py-3 font-semibold hover:text-green-400">Your Cart <i class="ri-arrow-right-up-line"></i></a>
+      <a href="cart.html" id="cartValue" class="bg-[#025e6c] text-white px-6 py-3 font-semibold hover:bg-[#0e9594]"><i class="ri-shopping-cart-line"></i> <span>01</span> </a>
+    </div>
+
+    <button id="menuButton" class="p-2 md:hidden">
+      <i class="ri-menu-line text-gray-600 font-semibold"></i>
+    </button>
+
+    <div id="nav-dialog" class="hidden fixed z-10 md:hidden bg-white inset-0 p-3">
+      <div id="nav-bar" class="flex justify-between">
+        <a href="#" class="flex gap-3 items-center" id="brand">
+          <img class="object-cover max-w-12 max-h-12 rounded-md" src="./public/images/Logo.png" alt="Logo">
+          <span class="font-semibold text-lg">Style Fusion</span>
+        </a>
+        <button id="closeMenuButton" class="p-2 md:hidden">
+          <i class="ri-close-large-line text-gray-600 font-semibold"></i>
+        </button>
+      </div>
+      <div class="mt-6">
+        <a href="index.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">Home</a>
+        <a href="products.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">Products</a>
+        <a href="contact.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">Contact Us</a>
+        <a href="about.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">About Us</a>
+      </div>
+      <div class="h-[1px] bg-gray-300"></div>
+      <div class="flex mt-6">
+        <a href="#" class="bg-black text-white px-10 py-3 font-semibold hover:text-green-400">Your Cart <i class="ri-arrow-right-up-line"></i></a>
+        <a href="cart.html" id="cartValueMobile" class="bg-[#025e6c] text-white px-6 py-3 font-semibold hover:bg-[#0e9594]"><i class="ri-shopping-cart-line"></i> <span>01</span> </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- main -->
+  <main>
+
+      <div id="cart-container" class="p-4 md:p-6 flex flex-col gap-6"></div>
+
+    <!-- Final Total -->
+      <div id="final-price-container" class="p-4 flex justify-center md:flex md:justify-end">
+        <div class="w-80 bg-white shadow-2xl md:mx-10 p-4">
+          <p class="mx-8 text-xl font-medium text-gray-500">Selected Offer Summary</p>
+          <div class="text-lg flex justify-between px-2 mt-10">
+            <p>Sub Total :</p>
+            <p id="sub-total" class="font-semibold">$ 89.99</p>
+          </div>
+          <div class="text-lg flex justify-between px-2 my-4">
+            <p>Tax :</p>
+            <p class="font-semibold">$ 1.1</p>
+          </div>
+
+          <div class="h-[1px] w-full border border-black opacity-50 mt-2"></div>
+
+          <div class="text-lg flex justify-between px-2 my-4">
+            <p>Final Total :</p>
+            <p id="final-total" class="font-semibold">$ 00.00</p>
+          </div>
+
+        </div>
+      </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="bg-slate-700 p-3 md:flex xl:flex xl:justify-center">
+      <div id="part-1" class="h-40 w-72 md:w-96 flex flex-col justify-center">
+        <img class="max-w-14 max-h-14 rounded ml-10 hover:scale-110 transition" src="./public/images/Logo.png" alt="Logo_img">
+        <h2 class="ml-10 mt-2 cursor-pointer text-white text-lg font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Style Fusion</h2>
+      </div>
+      <div id="part-2" class="h-40 w-72 md:w-96 flex flex-col justify-center text-white">
+        <h2 class="ml-10 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Vast Selection</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Easy Navigation</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Fast Shipping</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Customer Support</h2>
+      </div>
+      <div id="part-3" class="h-40 w-72 md:w-96 flex flex-col justify-center text-white">
+        <h2 class="ml-10 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Product Guides</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Resource name</h2>
+        <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Brand Stories</h2>
+        <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Our Story</h2>
+      </div>
+      <div id="part-4" class="h-40 w-72 md:w-96 text-white flex flex-col justify-center">
+        <h2 class="ml-10 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Company History</h2>
+        <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Privacy</h2>
+          <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Terms</h2>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="showcart.js"></script>
+</body>
+</html>

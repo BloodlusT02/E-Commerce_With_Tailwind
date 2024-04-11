@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Remix Icon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="p-3 flex justify-between items-center bg-white">
+    <a href="#" class="flex gap-3 items-center" id="brand">
+      <img class="object-cover max-w-12 max-h-12 rounded-md" src="./public/images/Logo.png" alt="Logo">
+      <span class="font-semibold text-lg">Style Fusion</span>
+    </a>
+
+    <div id="nav-menu" class="hidden lg:flex gap-10">
+      <a class="font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit" href="index.html">Home</a>
+      <a class="font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit"  href="products.html">Products</a>
+      <a class="font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit" href="contact.html">Contact Us</a>
+      <a class="font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit" href="about.html">About Us</a>
+    </div>
+
+    <div class="hidden lg:flex">
+      <a href="#" class="bg-black text-white px-10 py-3 font-semibold hover:text-green-400">Contact Us <i class="ri-arrow-right-up-line"></i></a>
+      <a href="cart.html" id="cartValue" class="bg-[#025e6c] text-white px-6 py-3 font-semibold hover:bg-[#0e9594]"><i class="ri-shopping-cart-line"></i> <span>01</span> </a>
+    </div>
+
+    <button id="menuButton" class="p-2 md:hidden">
+      <i class="ri-menu-line text-gray-600 font-semibold"></i>
+    </button>
+
+    <div id="nav-dialog" class="hidden fixed z-10 md:hidden bg-white inset-0 p-3">
+      <div id="nav-bar" class="flex justify-between">
+        <a href="#" class="flex gap-3 items-center" id="brand">
+          <img class="object-cover max-w-12 max-h-12 rounded-md" src="./public/images/Logo.png" alt="Logo">
+          <span class="font-semibold text-lg">Style Fusion</span>
+        </a>
+        <button id="closeMenuButton" class="p-2 md:hidden">
+          <i class="ri-close-large-line text-gray-600 font-semibold"></i>
+        </button>
+      </div>
+      <div class="mt-6">
+        <a href="index.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">Home</a>
+        <a href="products.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">Products</a>
+        <a href="contact.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">Contact Us</a>
+        <a href="about.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">About Us</a>
+      </div>
+      <div class="h-[1px] bg-gray-300"></div>
+      <div class="flex mt-6">
+        <a href="#" class="bg-black text-white px-10 py-3 font-semibold hover:text-green-400">Contact Us <i class="ri-arrow-right-up-line"></i></a>
+        <a href="cart.html" id="cartValueMobile" class="bg-[#025e6c] text-white px-6 py-3 font-semibold hover:bg-[#0e9594]"><i class="ri-shopping-cart-line"></i> <span>01</span> </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- main -->
+  <main>
+    <div class="py-4 px-8">
+      <!-- Form for small and medium devices -->
+      <div id="part-1" class="bg-[#e4c1f9] lg:hidden">
+        <h1 class="text-4xl font-bold text-black px-10 pt-10 md:text-5xl md:px-14 md:pt-12">
+          We'd love to <br>
+          hear from you
+        </h1>
+        <div class="h-48 flex flex-col justify-center items-center text-black text-lg font-medium md:text-xl">
+          <p>Send us a message</p>
+          <p>We are always happy to help!</p>
+          <p>Hear are some ways to contact us</p>
+        </div>
+      </div>
+      <div id="part-2" class="bg-[#025e6c] p-4 lg:hidden">
+        <h1 class="text-4xl font-bold text-white px-4 pt-3">Contact Us</h1>
+        <form action="" class="mt-6">
+          <input class=" text-lg py-1 px-3 my-1 w-full rounded-sm" type="text" placeholder="name">
+          <input class=" text-lg py-1 px-3 my-1 w-full rounded-sm" type="email" placeholder="email">
+          <input class=" text-lg py-1 px-3 my-1 w-full rounded-sm" type="text" placeholder="contact number">
+          <textarea class="h-20 text-lg py-1 px-3 my-1 w-full rounded-sm" placeholder="description"></textarea>
+          <button class="bg-[#e4c1f9] px-10 py-[5px] text-xl rounded-sm hover:scale-110" type="submit">Submit</button>
+        </form>
+      </div>
+
+
+      <!-- Form for large and medium devices -->
+      <div class="hidden lg:flex h-[500px] bg-red-200">
+        <div id="part-1" class="w-1/2 h-full bg-[#e4c1f9] lg:px-10 lg:pt-10">
+          <h1 class="text-5xl font-bold">
+            We'd love to <br>
+            hear from you
+          </h1>
+          <div class="h-64 flex items-center justify-center">
+            <div class="w-fit p-2 text-xl font-medium 2xl:text-2xl">
+              <p>Send us a message</p>
+              <p>We are always happy to help!</p>
+              <p>Hear are some ways to contact us</p>
+            </div>
+          </div>
+        </div>
+        <div id="part-2" class="w-1/2 h-full p-4 bg-[#025e6c]">
+          <h1 class="text-5xl font-semibold text-white lg:pt-10 lg:px-6">Contact Us</h1>
+          <form action="" class="mt-6">
+            <input class=" text-lg py-1 px-3 my-1 w-full rounded-sm" type="text" placeholder="name">
+            <input class=" text-lg py-1 px-3 my-1 w-full rounded-sm" type="email" placeholder="email">
+            <input class=" text-lg py-1 px-3 my-1 w-full rounded-sm" type="text" placeholder="contact number">
+            <textarea class="h-20 text-lg py-1 px-3 my-1 w-full resize-none rounded-sm" placeholder="description"></textarea>
+            <button class="bg-[#e4c1f9] px-10 py-[5px] text-xl rounded-sm hover:bg-[#abb4ff] transition" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </main> 
+
+  <!-- Footer -->
+  <footer>
+    <div class="bg-slate-700 p-3 md:flex xl:flex xl:justify-center">
+      <div id="part-1" class="h-40 w-72 md:w-96 flex flex-col justify-center">
+        <img class="max-w-14 max-h-14 rounded ml-10 hover:scale-110 transition" src="./public/images/Logo.png" alt="Logo_img">
+        <h2 class="ml-10 mt-2 cursor-pointer text-white text-lg font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Style Fusion</h2>
+      </div>
+      <div id="part-2" class="h-40 w-72 md:w-96 flex flex-col justify-center text-white">
+        <h2 class="ml-10 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Vast Selection</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Easy Navigation</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Fast Shipping</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Customer Support</h2>
+      </div>
+      <div id="part-3" class="h-40 w-72 md:w-96 flex flex-col justify-center text-white">
+        <h2 class="ml-10 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Product Guides</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Resource name</h2>
+        <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Brand Stories</h2>
+        <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Our Story</h2>
+      </div>
+      <div id="part-4" class="h-40 w-72 md:w-96 text-white flex flex-col justify-center">
+        <h2 class="ml-10 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Company History</h2>
+        <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Privacy</h2>
+          <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Terms</h2>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

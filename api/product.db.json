@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "product_name": "NIKE FREE",
+      "product_description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, reiciendis!",
+      "product_price": "199.99",
+      "stock": "20",
+      "product_image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 2,
+      "product_name": "Android Smartwatch",
+      "product_description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, reiciendis!",
+      "product_price": "99.99",
+      "stock": "10",
+      "product_image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 3,
+      "product_name": "Sun Glasses",
+      "product_description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, reiciendis!",
+      "product_price": "49.99",
+      "stock": "30",
+      "product_image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 4,
+      "product_name": "iphone X",
+      "product_description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, reiciendis!",
+      "product_price": "599.99",
+      "stock": "29",
+      "product_image": "https://images.unsplash.com/photo-1582974114209-b508ec603c6e?q=80&w=2065&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 5,
+      "product_name": "Airpods Pro",
+      "product_description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, reiciendis!",
+      "product_price": "69.99",
+      "stock": "20",
+      "product_image": "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 6,
+      "product_name": "Coco Noir Perfume",
+      "product_description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, reiciendis!",
+      "product_price": "19.99",
+      "stock": "99",
+      "product_image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 7,
+      "product_name": "Beautiful shoes",
+      "product_description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, reiciendis!",
+      "product_price": "29.99",
+      "stock": "20",
+      "product_image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 8,
+      "product_name": "Nike Air Max",
+      "product_description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, reiciendis!",
+      "product_price": "299.99",
+      "stock": "10",
+      "product_image": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ]

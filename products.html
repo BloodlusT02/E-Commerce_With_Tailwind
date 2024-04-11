@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Remix Icon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="p-3 flex justify-between items-center bg-white">
+    <a href="#" class="flex gap-3 items-center" id="brand">
+      <img class="object-cover max-w-12 max-h-12 rounded-md" src="./public/images/Logo.png" alt="Logo">
+      <span class="font-semibold text-lg">Style Fusion</span>
+    </a>
+
+    <div id="nav-menu" class="hidden lg:flex gap-10">
+      <a class="font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit" href="index.html">Home</a>
+      <a class="font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit"  href="products.html">Products</a>
+      <a class="font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit" href="contact.html">Contact Us</a>
+      <a class="font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit" href="about.html">About Us</a>
+    </div>
+
+    <div class="hidden lg:flex">
+      <a href="#" class="bg-black text-white px-10 py-3 font-semibold hover:text-green-400">Products <i class="ri-arrow-right-up-line"></i></a>
+      <a href="cart.html" id="cartValue" class="bg-[#025e6c] text-white px-6 py-3 font-semibold hover:bg-[#0e9594]"><i class="ri-shopping-cart-line"></i> <span>01</span> </a>
+    </div>
+
+    <button id="menuButton" class="p-2 md:hidden">
+      <i class="ri-menu-line text-gray-600 font-semibold"></i>
+    </button>
+
+    <div id="nav-dialog" class="hidden fixed z-10 md:hidden bg-white inset-0 p-3">
+      <div id="nav-bar" class="flex justify-between">
+        <a href="#" class="flex gap-3 items-center" id="brand">
+          <img class="object-cover max-w-12 max-h-12 rounded-md" src="./public/images/Logo.png" alt="Logo">
+          <span class="font-semibold text-lg">Style Fusion</span>
+        </a>
+        <button id="closeMenuButton" class="p-2 md:hidden">
+          <i class="ri-close-large-line text-gray-600 font-semibold"></i>
+        </button>
+      </div>
+      <div class="mt-6">
+        <a href="index.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">Home</a>
+        <a href="products.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">Products</a>
+        <a href="contact.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">Contact Us</a>
+        <a href="about.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">About Us</a>
+      </div>
+      <div class="h-[1px] bg-gray-300"></div>
+      <div class="flex mt-6">
+        <a href="#" class="bg-black text-white px-10 py-3 font-semibold hover:text-green-400">Products <i class="ri-arrow-right-up-line"></i></a>
+        <a href="cart.html" id="cartValueMobile" class="bg-[#025e6c] text-white px-6 py-3 font-semibold hover:bg-[#0e9594]"><i class="ri-shopping-cart-line"></i> <span>01</span> </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- main -->
+  <main>
+    <!-- Top Box -->
+    <div class="p-4">
+      <div id="top-box" class="bg-[cadetblue] text-white rounded-xl p-3 pl-14 text-4xl font-semibold md:flex justify-between md:pl-20 md:pr-20
+      lg:h-80 lg:flex lg:items-center lg:px-20 lg:overflow-hidden lg:text-5xl xl:text-6xl xl:h-[400px] xl:px-20
+      ">
+        <h1>Get The Best <br />
+          Product At Your <br />
+          Home <i class="ri-shopping-cart-fill"></i>
+        </h1>
+        <img
+        class="hidden lg:block w-96 h-96 object-cover xl:w-[500px] xl:h-[500px]"
+        src="https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Image"
+      />
+        <div class="text-xl mt-3 flex items-center gap-1 lg:flex lg:flex-col xl:text-2xl xl:gap-1">
+          <i class="ri-instagram-fill"></i>
+          <i class="ri-facebook-circle-fill mx-1"></i>
+          <i class="ri-twitter-fill"></i>
+          <div id="line" class="h-[1px] w-32 border border-white lg:hidden ml-2"></div>
+          <div class="hidden lg:block w-[2px] h-20 xl:h-36 mt-2 border border-white"></div>
+        </div>
+      </div>
+
+      <!-- Midlle Navbar -->
+      <!-- <div class="hidden h-20 lg:flex items-center justify-between px-10">
+        <div class="flex items-center gap-5">
+          <a href="#" class="text-lg font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit">Electronics</a>
+          <a href="#" class="text-lg font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit">Clothes</a>
+          <a href="#" class="text-lg font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit">Books</a>
+          <a href="#" class="text-lg font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit">Furniture</a>
+          <a href="#" class="text-lg font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit">Decorations</a>
+          <a href="#" class="text-lg font-semibold text-[] hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit">See all</a>
+        </div>
+        <div class="flex items-center gap-3 text-lg font-semibold">
+          <div class="line w-28 h-[1px] border border-black"></div>
+          <h2>01</h2>
+        </div>
+      </div> -->
+
+    </div>
+    
+    <!-- Mobile Men Bar -->
+    <div class="h-12 flex items-center justify-center gap-2 lg:flex lg:justify-between lg:mx-10">
+      <div class="line h-[2px] w-20 md:w-40 border border-black lg:hidden"></div>
+      <h2 class="text-lg bg-[#ff006e] px-6 py-[2px] rounded-full font-semibold text-white">Mens Collection</h2>
+      <div class="line h-[2px] w-20 md:w-40 border border-black lg:hidden"></div>
+      <div class="hidden lg:flex items-center gap-2 ">
+        <div class="line h-[1px] w-28 border border-black"></div>
+        <h2 class="text-lg bg-[#ff006e] px-6 py-[2px] rounded-full font-semibold text-white">01</h2>
+      </div>
+    </div>
+    <!-- Products Men -->
+    <div class="py-4 flex flex-wrap gap-5 justify-center">
+
+          <div class="collections w-[300px] flex flex-col">
+            <div class="w-full h-[400px] bg-cover bg-red-500 bg-[url('https://i.pinimg.com/564x/b7/54/01/b754019357647c50d424971ca3364ed5.jpg')]"></div>
+            <input class="w-full text-lg border-2 border-black mt-1 py-1 text-center font-semibold hover:scale-105 transition cursor-pointer" type="text" disabled value="Strips">
+          </div>
+
+          <div class="collections w-[300px] flex flex-col">
+            <div class="w-full h-[400px] bg-cover bg-red-500 bg-[url('https://i.pinimg.com/564x/cc/db/e7/ccdbe7178ad70dad780b4bb43de3d3f4.jpg')]"></div>
+            <input class="w-full text-lg border-2 border-black mt-1 py-1 text-center font-semibold hover:scale-105 transition cursor-pointer" type="text" disabled value="Gray">
+          </div>
+
+          <div class="collections w-[300px] flex flex-col">
+            <div class="w-full h-[400px] bg-cover bg-red-500 bg-[url('https://i.pinimg.com/564x/69/a3/fc/69a3fc57d4a70d8a2f9f06f8b7640367.jpg')]"></div>
+            <input class="w-full text-lg border-2 border-black mt-1 py-1 text-center font-semibold hover:scale-105 transition cursor-pointer" type="text" disabled value="Shorts">
+          </div>
+
+          <div class="collections w-[300px] flex flex-col">
+            <div class="w-full h-[400px] bg-cover bg-red-500 bg-[url('https://i.pinimg.com/564x/ba/6a/08/ba6a081b2a989593600fdaad28b5524f.jpg')]"></div>
+            <input class="w-full text-lg border-2 border-black mt-1 py-1 text-center font-semibold hover:scale-105 transition cursor-pointer" type="text" disabled value="Trending">
+          </div>
+      
+    </div>
+
+
+    <!-- Mobile Women Bar -->
+    <div class="h-12 flex items-center justify-center gap-2 lg:flex lg:justify-between lg:mx-10">
+          <div class="line h-[2px] w-20 md:w-40 border border-black lg:hidden"></div>
+          <h2 class="text-lg bg-[#ff006e] px-6 py-[2px] rounded-full font-semibold text-white">Womens Collection</h2>
+          <div class="line h-[2px] w-20 md:w-40 border border-black lg:hidden"></div>
+          <div class="hidden lg:flex items-center gap-2 ">
+            <div class="line h-[1px] w-28 border border-black"></div>
+            <h2 class="text-lg bg-[#ff006e] px-6 py-[2px] rounded-full font-semibold text-white">02</h2>
+          </div>
+    </div>
+    <!-- Products Women -->
+    <div class="py-4 flex flex-wrap gap-5 justify-center">
+    
+              <div class="collections w-[300px] flex flex-col">
+                <div class="w-full h-[400px] bg-cover bg-red-500 bg-[url('https://i.pinimg.com/564x/7b/83/e1/7b83e111914e6f46ae711e0de47fe98d.jpg')]"></div>
+                <input class="w-full text-lg border-2 border-black mt-1 py-1 text-center font-semibold hover:scale-105 transition cursor-pointer" type="text" disabled value="Fashion">
+              </div>
+    
+              <div class="collections w-[300px] flex flex-col">
+                <div class="w-full h-[400px] bg-cover bg-red-500 bg-[url('https://i.pinimg.com/564x/f6/2b/8f/f62b8f692a277f01dcd0f801ba5d960b.jpg')]"></div>
+                <input class="w-full text-lg border-2 border-black mt-1 py-1 text-center font-semibold hover:scale-105 transition cursor-pointer" type="text" disabled value="Classic">
+              </div>
+    
+              <div class="collections w-[300px] flex flex-col">
+                <div class="w-full h-[400px] bg-cover bg-red-500 bg-[url('https://i.pinimg.com/564x/74/f6/f7/74f6f74831be784ee88a4b6c49c1f26f.jpg')]"></div>
+                <input class="w-full text-lg border-2 border-black mt-1 py-1 text-center font-semibold hover:scale-105 transition cursor-pointer" type="text" disabled value="Plain">
+              </div>
+    
+              <div class="collections w-[300px] flex flex-col">
+                <div class="w-full h-[400px] bg-cover bg-red-500 bg-[url('https://i.pinimg.com/564x/e0/10/ef/e010ef254b070bbdc6b67d8a24ef864c.jpg')]"></div>
+                <input class="w-full text-lg border-2 border-black mt-1 py-1 text-center font-semibold hover:scale-105 transition cursor-pointer" type="text" disabled value="Trending">
+              </div>
+          
+    </div>
+
+    <!-- Trending -->
+    <div class="h-12 m-4 flex items-center justify-center gap-3">
+      <div class="line h-[2px] w-20 md:w-40 lg:w-48 xl:w-60 2xl:w-72 border border-black"></div>
+      <h2 class="text-base bg-[#ff006e] px-6 py-[2px] rounded-full font-semibold text-white">Trending Fashion</h2>
+      <div class="line h-[2px] w-20 md:w-40 lg:w-48 xl:w-60 2xl:w-72 border border-black"></div>
+    </div>
+
+    <div class="p-4 pb-10 flex flex-wrap justify-center gap-3">
+
+      <div class="w-56 h-96 rounded-xl overflow-hidden cursor-pointer hover:scale-110 transition">
+        <img class="w-full h-full object-cover" src="https://i.pinimg.com/564x/fe/57/dc/fe57dc0ea3e48c3f071b107682c36a56.jpg" alt="">
+      </div>
+
+      <div class="w-56 h-96 rounded-xl overflow-hidden cursor-pointer hover:scale-110 transition">
+        <img class="w-full h-full object-cover" src="https://i.pinimg.com/564x/0b/cd/06/0bcd06f1e5af203673c014232babcd3b.jpg" alt="">
+      </div>
+
+      <div class="w-56 h-96 rounded-xl overflow-hidden cursor-pointer hover:scale-110 transition">
+        <img class="w-full h-full object-cover" src="https://i.pinimg.com/564x/fe/57/dc/fe57dc0ea3e48c3f071b107682c36a56.jpg" alt="">
+      </div>
+
+      <div class="w-56 h-96 rounded-xl overflow-hidden cursor-pointer hover:scale-110 transition">
+        <img class="w-full h-full object-cover" src="https://i.pinimg.com/736x/22/e2/c3/22e2c3b842ae90d8409fcfd5875da01a.jpg" alt="">
+      </div>
+
+      <div class="w-56 h-96 rounded-xl overflow-hidden cursor-pointer hover:scale-110 transition">
+        <img class="w-full h-full object-cover" src="https://i.pinimg.com/564x/94/57/74/94577436dc0e7046eddbbaa8acdd6f76.jpg" alt="">
+      </div>
+
+      <div class="w-56 h-96 rounded-xl overflow-hidden cursor-pointer hover:scale-110 transition">
+        <img class="w-full h-full object-cover" src="https://i.pinimg.com/564x/f7/a0/1a/f7a01af567cf685e0a59e86502355e92.jpg" alt="">
+      </div>
+
+    </div>
+</div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="bg-slate-700 p-3 md:flex xl:flex xl:justify-center">
+      <div id="part-1" class="h-40 w-72 md:w-96 flex flex-col justify-center">
+        <img class="max-w-14 max-h-14 rounded ml-10 hover:scale-110 transition" src="./public/images/Logo.png" alt="Logo_img">
+        <h2 class="ml-10 mt-2 cursor-pointer text-white text-lg font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Style Fusion</h2>
+      </div>
+      <div id="part-2" class="h-40 w-72 md:w-96 flex flex-col justify-center text-white">
+        <h2 class="ml-10 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Vast Selection</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Easy Navigation</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Fast Shipping</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Customer Support</h2>
+      </div>
+      <div id="part-3" class="h-40 w-72 md:w-96 flex flex-col justify-center text-white">
+        <h2 class="ml-10 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Product Guides</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Resource name</h2>
+        <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Brand Stories</h2>
+        <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Our Story</h2>
+      </div>
+      <div id="part-4" class="h-40 w-72 md:w-96 text-white flex flex-col justify-center">
+        <h2 class="ml-10 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Company History</h2>
+        <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Privacy</h2>
+          <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Terms</h2>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

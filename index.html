@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Remix Icon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="p-3 flex justify-between items-center bg-white">
+    <a href="#" class="flex gap-3 items-center" id="brand">
+      <img class="object-cover max-w-12 max-h-12 rounded-md" src="./public/images/Logo.png" alt="Logo">
+      <span class="font-semibold text-lg">Style Fusion</span>
+    </a>
+
+    <div id="nav-menu" class="hidden lg:flex gap-10">
+      <a class="font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit" href="index.html">Home</a>
+      <a class="font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit"  href="products.html">Products</a>
+      <a class="font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit" href="contact.html">Contact Us</a>
+      <a class="font-semibold hover:text-[#4361ee] nav-link hover:border-b transition hover:-translate-y-1 border-[#3a86ff] w-fit" href="about.html">About Us</a>
+    </div>
+
+    <div class="hidden lg:flex">
+      <a href="#" class="bg-black text-white px-10 py-3 font-semibold hover:text-green-400">Get Started <i class="ri-arrow-right-up-line"></i></a>
+      <a href="/cart.html" id="cartValue" class="bg-[#025e6c] text-white px-6 py-3 font-semibold hover:bg-[#0e9594]"><i class="ri-shopping-cart-line"></i> <span>01</span> </a>
+    </div>
+
+    <button id="menuButton" class="p-2 md:hidden">
+      <i class="ri-menu-line text-gray-600 font-semibold"></i>
+    </button>
+
+    <div id="nav-dialog" class="hidden fixed z-10 md:hidden bg-white inset-0 p-3">
+      <div id="nav-bar" class="flex justify-between">
+        <a href="#" class="flex gap-3 items-center" id="brand">
+          <img class="object-cover max-w-12 max-h-12 rounded-md" src="./public/images/Logo.png" alt="Logo">
+          <span class="font-semibold text-lg">Style Fusion</span>
+        </a>
+        <button id="closeMenuButton" class="p-2 md:hidden">
+          <i class="ri-close-large-line text-gray-600 font-semibold"></i>
+        </button>
+      </div>
+      <div class="mt-6">
+        <a href="index.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">Home</a>
+        <a href="products.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">Products</a>
+        <a href="contact.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">Contact Us</a>
+        <a href="about.html" class="font-semibold m-3 p-3 block rounded-md hover:bg-gray-50">About Us</a>
+      </div>
+      <div class="h-[1px] bg-gray-300"></div>
+      <div class="flex mt-6">
+        <a href="#" class="bg-black text-white px-10 py-3 font-semibold hover:text-green-400">Get Started <i class="ri-arrow-right-up-line"></i></a>
+        <a href="cart.html" id="cartValueMobile" class="bg-[#025e6c] text-white px-6 py-3 font-semibold hover:bg-[#0e9594]"><i class="ri-shopping-cart-line"></i> <span>01</span> </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- main -->
+  <main>
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-br from-purple-50 via-orange-50 to-transparent">
+      <!-- Hero Container -->
+      <div id="hero-container" class="max-w-4xl mx-auto px-6 flex flex-col">
+        <div id="version-text" class="flex my-2 items-center gap-2 border border-yellow-300 bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-1 transition group">
+          <div class="w-2 h-2 bg-yellow-400 border rounded-full border-yellow-600"></div>
+          <p class="font-medium text-yellow-600">Unleash the power of savings!  <span class="text-yellow-800">Grab discounts now!</span></p>
+          <i class="ri-arrow-right-line text-yellow-600 group-hover:translate-x-1 transition duration-300"></i>
+        </div>
+      </div>
+      <!-- Hero Landing Box -->
+        <div id="landing-container" class="p-3">
+          <div id="Landing-page-main" class="">
+            <div class="bg-[#025e6c] rounded-lg p-3 
+            md:p-10 
+            lg:flex lg:justify-between lg:items-center lg:px-28 lg:max-h-[58vh] lg:overflow-hidden
+            xl:max-h-[80vh] xl:flex xl:justify-between xl:px-16 2xl:flex 2xl:justify-between 2xl:p-24">
+              <div id="part-1" class="">
+                <h1 class="text-white hidden 
+                md:block md:text-center md:text-xl md:pb-4 
+                lg:pb-1 lg:text-base lg:text-start
+                xl:text-2xl">Explore The Latest In Fashion Industries</h1>
+                <h1 class="text-4xl font-semibold text-white text-center 
+                md:text-center md:text-5xl md:pb-4 
+                lg:text-start lg:text-5xl
+                xl:text-6xl 2xl:text-7xl">Your Destination For <br /> Latest Fashion <i class="ri-shopping-bag-fill"></i></h1>
+                <p class="text-white hidden md:block md:text-center lg:text-start lg:w-4/6 lg:text-sm xl:w-3/5"> Uncover a world of possibilities with our vast collection of top
+                  brands. Enjoy great deals, fast shipping, and
+                  exceptional service. Start browsing and elevate your lifestyle
+                  today!
+                </p>
+                <div class="flex justify-center mt-4 gap-4 lg:justify-start">
+                  <img class="hidden md:block md:max-w-12 max-h-12" src="./public/images/flipkart-logo.png" alt="">
+                  <img class="hidden md:block md:max-w-12 max-h-12" src="./public/images/amazon-logo.png" alt="">
+                  <img class="hidden md:block md:max-w-12 max-h-14 rounded" src="./public/images/Logo.png" alt="">
+                </div>
+              </div>
+
+              <div id="part-2" class="hidden lg:block">
+                <img class="lg:w-[700px] xl:w-[800px]" src="./public/images/model.png" alt="">
+              </div>
+          </div>
+        </div>
+      </div>
+        <!-- Products -->
+    <div id="product-container" class="p-3">
+      <div id="Cards" class="cards bg-black rounded-lg p-6 flex flex-wrap justify-center gap-5 lg:gap-7"></div>
+    </div>
+
+
+    <!-- Top Box -->
+    <div class="p-4">
+      <div id="top-box" class="bg-[#ff006e] text-white rounded-xl p-3 pl-14 text-4xl font-semibold md:flex justify-between md:pl-20 md:pr-20
+      lg:h-80 lg:flex lg:items-center lg:px-20 lg:overflow-hidden lg:text-5xl xl:text-6xl xl:h-[400px] xl:px-20
+      ">
+        <h1 class="leading-tight">
+          Latest Stylish  Shoes <br>
+          Men 2024 Collection <br>
+          <a href="#" class="text-xl block w-fit px-10 py-3 mt-2 bg-[#025e6c] hover:bg-[#0e9594] transition">See all</a>
+        </h1>
+        <img
+        class="hidden lg:block w-96 h-96 object-cover xl:w-[550px] xl:h-[500px]"
+        src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Image"
+      />
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="bg-slate-700 p-3 md:flex xl:flex xl:justify-center">
+      <div id="part-1" class="h-40 w-72 md:w-96 flex flex-col justify-center">
+        <img class="max-w-14 max-h-14 rounded ml-10 hover:scale-110 transition" src="./public/images/Logo.png" alt="Logo_img">
+        <h2 class="ml-10 mt-2 cursor-pointer text-white text-lg font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Style Fusion</h2>
+      </div>
+      <div id="part-2" class="h-40 w-72 md:w-96 flex flex-col justify-center text-white">
+        <h2 class="ml-10 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Vast Selection</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Easy Navigation</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Fast Shipping</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Customer Support</h2>
+      </div>
+      <div id="part-3" class="h-40 w-72 md:w-96 flex flex-col justify-center text-white">
+        <h2 class="ml-10 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Product Guides</h2>
+        <h2 class="ml-10 mt-1 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Resource name</h2>
+        <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Brand Stories</h2>
+        <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Our Story</h2>
+      </div>
+      <div id="part-4" class="h-40 w-72 md:w-96 text-white flex flex-col justify-center">
+        <h2 class="ml-10 cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Company History</h2>
+        <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Privacy</h2>
+          <h2 class="ml-10 mt-1  cursor-pointer font-medium hover:border-b hover:text-[#3a86ff] transition border-[#3a86ff] w-fit">Terms</h2>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
