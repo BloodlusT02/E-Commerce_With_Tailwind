@@ -209,7 +209,17 @@ const updateCartProductTotal = () => {
         subTotal.textContent = `$ ${ Number(totalProductPrice) }`
         finalTotal.textContent = `$ ${ Number(totalProductPrice + 1.1) }`
     };
-    finalPrice();
+    // finalPrice();
+    
+  if(totalProductPrice > 0){
+      finalPrice();
+    }else{
+      const subTotal = document.getElementById("sub-total")
+      const finalTotal = document.getElementById("final-total");
+  
+      subTotal.textContent = 0;
+      finalTotal.textContent = 0;
+    }
 
 };
 updateCartProductTotal();
